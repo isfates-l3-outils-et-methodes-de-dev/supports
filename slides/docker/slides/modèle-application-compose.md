@@ -4,7 +4,7 @@
 #### Modèle d'application Compose
 <Hr />
 
-<div class="grid grid-cols-2 gap-4 ">
+<div class="grid grid-cols-2 gap-4">
 
 ```yaml {*}{lines:true}
 services:

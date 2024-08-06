@@ -314,7 +314,7 @@ Maintenant exécutez à nouveau la même commande. Quelle différence voyez-vous
 </v-click>
 
 <!--
-* TODO: Qu'est ce que le docker deamon?
+TODO: Qu'est ce que le docker deamon?
 * Où sont stocké 
 -->
 
