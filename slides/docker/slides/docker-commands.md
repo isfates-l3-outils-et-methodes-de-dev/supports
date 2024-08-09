@@ -1,6 +1,6 @@
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### CLI de Docker: les bases
+### CLI de Docker: les bases
 
 <Hr />
 

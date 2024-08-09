@@ -1,5 +1,5 @@
 
-## Conteneurisation avec Docker
+# Conteneurisation avec Docker
 <Hr />
 
 <div class="flex justify-center h-full p-4">
@@ -8,15 +8,15 @@
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Définitions et concepts de base
+## Définitions et concepts de base
 
 --- 
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Qu'est-ce que DevOps ?
+### Qu'est-ce que DevOps ?
 
 <Hr />
 
@@ -40,7 +40,7 @@
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Ce cours se concentre principalement sur les notions:
 
@@ -55,9 +55,9 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Qu'est-ce que la virtualisation ?
+### Qu'est-ce que la virtualisation ?
 
 <Hr />
 <div class="mt-10" />
@@ -70,7 +70,7 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Principes de Virtualisation:**
 
@@ -85,7 +85,7 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <div class="text-sm mt-5">
 
@@ -100,7 +100,7 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Intérêts de la virtualisation:**
 
@@ -123,7 +123,7 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Limitations de la virtualisation:**
 
@@ -139,9 +139,9 @@ Ce cours se concentre principalement sur les notions:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Qu'est ce que Docker?
+### Qu'est ce que Docker?
 
 <Hr />
 
@@ -158,7 +158,7 @@ Ce cours se concentre principalement sur les notions:
 
 --- 
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 En éliminant le jargon, nous obtenons 2 définitions :
 
@@ -189,7 +189,7 @@ En éliminant le jargon, nous obtenons 2 définitions :
 
 --- 
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Avantages des conteneurs:
 
@@ -214,7 +214,7 @@ Avantages des conteneurs:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <div class="flex justify-center h-2/5">
   <img src="/images/docker-container.png" alt="Illustration d'un container Docker: https://www.mobilise.cloud/alternatives-to-docker-container" class="!border-0" />
@@ -236,7 +236,7 @@ pour le transport maritime:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Docker est l'outil de compilation, de construction et de test le plus utilisé par les développeurs professionnels. 
 
@@ -251,9 +251,9 @@ Docker est l'outil de compilation, de construction et de test le plus utilisé p
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Exécution de conteneurs
+### Exécution de conteneurs
 <Hr />
 
 **À vous de jouer:** Installez l'application officiel Docker Desktop depuis https://www.docker.com/products/docker-desktop et créez un compte *Docker Personal*.
@@ -271,7 +271,7 @@ Docker version 20.10.21, build baeda1f
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Créer et exécuter un nouveau conteneur à partir d'une *image* à l'aide de la commande:
 
@@ -284,7 +284,7 @@ $ docker run # Aliase
 
 --- 
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Résultat:**
 
@@ -320,9 +320,9 @@ TODO: Qu'est ce que le docker deamon?
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Images et conteneurs
+### Images et conteneurs
 <Hr />
 
 <p class="text-center font-bold	!mt-10">
@@ -351,9 +351,9 @@ TODO: Qu'est ce que le docker deamon?
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Image
+#### Image
 
 <Hr />
 
@@ -380,9 +380,9 @@ $ docker image ls
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Dockerfile
+#### Dockerfile
 
 <Hr />
 
@@ -408,9 +408,9 @@ CMD <commande qui est exécutée lors de `docker container run`>
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Conteneur
+#### Conteneur
 
 <Hr />
 
@@ -427,10 +427,10 @@ src: ./docker-commands.md
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 
-##### Exercice:
+#### Exercice:
 <Hr />
 
 1. Démarrer 3 conteneurs à partir de l'image nommé `nginx` en mode détaché avec des noms définis (example: `nginx-1`).
@@ -439,7 +439,7 @@ src: ./docker-commands.md
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Réponse:**
 
@@ -459,9 +459,9 @@ $ docker container ls -a -f ancestor=nginx
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Exécution et arrêt des conteneurs
+## Exécution et arrêt des conteneurs
 <Hr />
 
 Lancez la commande suivante:
@@ -504,24 +504,24 @@ $ docker exec -it <container> COMMAND
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Connectez vous à votre container `devopsdockeruh/simple-web-service:ubuntu` et afficher le contenu du fichier `/usr/src/app/text.log`.
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Analyse des images
+## Analyse des images
 <Hr />
 
 Les images sont les blocs de construction de base pour les conteneurs et les autres images. Lorsque vous "conteneurisez" une application, vous travaillez à la construction de l'image.
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### D'où viennent les images ?
+### D'où viennent les images ?
 <Hr />
 
 <div class="flex justify-center h-1/4 p-4">
@@ -558,9 +558,9 @@ $ docker search hello-world
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Analyse détaillée d'une image
+### Analyse détaillée d'une image
 <Hr />
 
 Chaque version d'image est associée à un tag:
@@ -592,9 +592,9 @@ $ docker pull docker.io/library/ubuntu
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Build une image
+### Build une image
 <Hr />
 
 **À vous de jouer:** Créez un script nommé `hello.sh`  dans un nouveau dossier vide:
@@ -630,7 +630,7 @@ CMD ./hello.sh
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -668,9 +668,9 @@ $ docker run -it hello-docker sh
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Exercice
+### Exercice
 <Hr />
 
 <div class="text-xs mt-5">
@@ -717,9 +717,9 @@ CMD ./curler.sh
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Différence entre les instructions CMD et ENTRYPOINT
+### Différence entre les instructions CMD et ENTRYPOINT
 <Hr />
 
 * `ENTRYPOINT` doit être défini lorsque le conteneur est utilisé comme exécutable.
@@ -736,9 +736,9 @@ ENTRYPOINT ["python3"]
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Stockage des données
+## Stockage des données
 <Hr />
 Par défaut, tous les fichiers créés à l'intérieur d'un conteneur sont stockés sur une couche de conteneur accessible en écriture. Cela signifie que :
 
@@ -747,7 +747,7 @@ Par défaut, tous les fichiers créés à l'intérieur d'un conteneur sont stock
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -767,9 +767,9 @@ Par défaut, tous les fichiers créés à l'intérieur d'un conteneur sont stock
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Les volumes
+### Les volumes
 <Hr />
 
 1. Lancez un conteneur `mysql`:
@@ -798,9 +798,9 @@ $ docker volume inspect <volume>
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Les ports
+## Les ports
 <Hr />
 
 L'ouverture d'une connexion entre le monde extérieur et un conteneur Docker se fait en deux étapes :
@@ -822,7 +822,7 @@ Pour publier un port, lancez le conteneur avec `-p <host-port>:<container-port>`
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Lancez le conteneur `docker/welcome-to-docker` qui expose sont port `80` sur votre port local `8080`.
 
@@ -842,9 +842,9 @@ docker run -d -p 8080:80 docker/welcome-to-docker
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Publier une image
+## Publier une image
 <Hr />
 
 Publions ensemble notre image locale `hello-docker`:
@@ -862,9 +862,9 @@ Publions ensemble notre image locale `hello-docker`:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Best practices pour builder une image
+## Best practices pour builder une image
 <Hr />
 
 <div class="flex justify-center h-2/4 p-4">
@@ -873,9 +873,9 @@ Publions ensemble notre image locale `hello-docker`:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Analyse des layers d'une image
+### Analyse des layers d'une image
 <Hr />
 
 En utilisant la commande `docker image history`, vous pouvez voir la commande qui a été utilisée pour créer chaque layer dans une image:
@@ -895,9 +895,9 @@ Ajoutez l'option `--no-trunc` pour éviter de tronquer les lignes.
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Gérer le cache des layers
+### Gérer le cache des layers
 <Hr />
 
 Lors de la construction d'une image, Docker parcourt les instructions de votre Dockerfile, exécutant chacune d'entre elles dans l'ordre spécifié. Pour chaque instruction, Docker vérifie s'il peut réutiliser l'instruction du cache de construction.
@@ -911,7 +911,7 @@ Si un layer est modifié, tous les autres layers qui le suivent doivent égaleme
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -960,9 +960,9 @@ RUN npm build                  # Run build
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Réduire la taille des layers
+### Réduire la taille des layers
 <Hr />
 
 1. Ne pas inclure de fichiers inutiles
@@ -988,9 +988,9 @@ Veillez à n'installer que les paquets dont vous avez besoin. Si vous ne les uti
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Minimiser le nombre de layers
+### Minimiser le nombre de layers
 <Hr />
 
 Moins de layers signifie moins de choses à reconstruire lorsque quelque chose change dans votre Dockerfile.
@@ -1002,7 +1002,7 @@ Moins de layers signifie moins de choses à reconstruire lorsque quelque chose c
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -1029,7 +1029,7 @@ COPY --from=build /app/target/file.war /usr/local/tomcat/webapps
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -1054,9 +1054,9 @@ RUN echo "la première commande" && \
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### En résumé
+## En résumé
 <Hr />
 
 <div class="text-sm">
@@ -1086,9 +1086,9 @@ RUN echo "la première commande" && \
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Exercice:
+## Exercice:
 <Hr />
 
 **À vous de jouer:** Certains de nos coéquipiers développeurs ont créé une application avec un `README` qui indique ce qu'il faut installer et comment exécuter une application Ruby on Rails.
@@ -1098,7 +1098,7 @@ Ouvrez ce projet https://github.com/isfates-l3-outils-et-methodes-de-dev/exercic
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Correction:**
 

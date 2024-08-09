@@ -6,6 +6,7 @@ transition: slide-up
 course: Outils et méthodes de développement
 presenter-name: Johann Chopin
 date: Premier semestre de la 3ème années de la licence Informatique et ingénierie du web.
+hideInToc: true
 exportFilename: git
 ---
 
@@ -15,10 +16,10 @@ exportFilename: git
 hideInToc: true
 ---
 
-## Plan
+# Plan
 <Hr />
 
-<Toc minDepth="2" maxDepth="4"/>
+<Plan columns="3"/>
 
 ---
 src: ./slides/systeme-de-version.md
@@ -30,6 +31,10 @@ src: ./slides/bases-de-git.md
 
 ---
 src: ./slides/local-repository.md
+---
+
+---
+src: ./slides/git-branching.md
 ---
 
 ---

@@ -1,4 +1,4 @@
-## Les différents types de systèmes existants
+# Les différents types de systèmes existants
 <Hr />
 
 <br />
@@ -7,9 +7,9 @@
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Système de contrôle de versions local
+## Système de contrôle de versions local
 <Hr />
 
 <v-clicks>
@@ -30,9 +30,9 @@ RCS (Revision Control System) est un example de VCS (Version Control System).
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Système de contrôle de versions centralisé
+## Système de contrôle de versions centralisé
 <Hr />
 
 <v-clicks>
@@ -63,9 +63,9 @@ travailler dessus en même temps
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Système de contrôle de versions distribué
+## Système de contrôle de versions distribué
 <Hr />
 
 <div class="text-sm">
@@ -92,9 +92,9 @@ travailler dessus en même temps
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Brève histoire de GIT
+## Brève histoire de GIT
 <Hr />
 
 * Le noyau de Linux est un projet open-source avec un scope très large. De 1991 à 2002, le code n’était versionné cependant qu’à l’aide de patchs et de fichiers archivés
@@ -111,7 +111,7 @@ travailler dessus en même temps
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <div class="flex justify-center h-2/5 p-4">
   <img src="/images/linus.png" alt="Photo de Linus Torvalds" />
@@ -126,7 +126,7 @@ travailler dessus en même temps
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -150,7 +150,7 @@ plus de 12 millions de personnes !
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **Quelle est la signification de Git ?**
 
@@ -165,7 +165,7 @@ plus de 12 millions de personnes !
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Linus Torvalds fait son premier commit du code de Git le 7 avril 2005.
 

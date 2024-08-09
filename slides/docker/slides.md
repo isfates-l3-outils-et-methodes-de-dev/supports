@@ -7,6 +7,7 @@ course: Outils et méthodes de développement
 presenter-name: Johann Chopin
 date: Premier semestre de la 3ème années de la licence Informatique et ingénierie du web.
 exportFilename: docker
+hideInToc: true
 ---
 
 # <mdi-docker /> Introduction à Docker
@@ -15,11 +16,10 @@ exportFilename: docker
 hideInToc: true
 ---
 
-## Plan
+# Plan
 <Hr />
 
-<Toc minDepth="2" maxDepth="4"/>
-
+<Plan columns="4"/>
 
 ---
 src: ./slides/1-conteneurisation-avec-docker.md

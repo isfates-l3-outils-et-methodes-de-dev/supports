@@ -1,4 +1,4 @@
-## Orchestration de conteneurs avec Docker
+# Orchestration de conteneurs avec Docker
 <Hr />
 
 <br />
@@ -7,9 +7,9 @@ Le démarrage et l'arrêt des conteneurs sont un peu pénibles, sans parler de l
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Docker Compose
+## Docker Compose
 <Hr />
 
 <div class="flex justify-center h-2/5 p-4">
@@ -28,7 +28,7 @@ Docker Compose simplifie la gestion des `services`, des `networks` et des `volum
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Docker Compose fonctionne dans tous les environnements: production, staging, développement, tests et CI. Il dispose également de commandes permettant de gérer l'ensemble du cycle de vie de votre application:
 
@@ -42,9 +42,9 @@ Docker Compose fonctionne dans tous les environnements: production, staging, dé
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Format YAML
+### Format YAML
 <Hr />
 
 <p class="text-center">
@@ -77,9 +77,9 @@ src: ./modèle-application-compose.md
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Docker compose CLI
+## Docker compose CLI
 <Hr />
 
 <div class="text-sm">
@@ -100,9 +100,9 @@ src: ./modèle-application-compose.md
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Exercice
+## Exercice
 <Hr />
 
 <br />
@@ -117,7 +117,7 @@ Nous allons créer un environnement de développement en local permettant de lan
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -139,7 +139,7 @@ Nous allons créer un environnement de développement en local permettant de lan
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 ```yaml {monaco}
 #/ Correction
@@ -192,7 +192,7 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -209,7 +209,7 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 ```yaml {monaco}
 #/ Correction
@@ -265,7 +265,7 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -283,7 +283,7 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 ```yaml {monaco}
 #/ Correction
@@ -353,9 +353,9 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Conteneurs et développement
+## Conteneurs et développement
 <Hr />
 
 Les conteneurs ne sont pas seulement utiles en production, ils peuvent également être utilisés dans des environnements de développement.
@@ -366,7 +366,7 @@ Les conteneurs ne sont pas seulement utiles en production, ils peuvent égalemen
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Imaginez juste devoir installer toutes les dépendances d'un tel projet lors de votre premier jours:
 
@@ -376,9 +376,9 @@ Imaginez juste devoir installer toutes les dépendances d'un tel projet lors de 
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Spécification de build
+### Spécification de build
 <Hr />
 
 <br />
@@ -402,9 +402,9 @@ services:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Exercice
+### Exercice
 <Hr />
 
 **À vous de jouer:** Dans votre repo local de https://github.com/isfates-l3-outils-et-methodes-de-dev/exercices, lisez le `README` du projet `node-dev-env` et créez un fichier `Dockerfile` qui installe les dépendances nécessaires.
@@ -438,7 +438,7 @@ RUN npm install
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Ajoutez maintenant un fichier `compose.yaml` composé d'un service `node-dev-env` qui:
 
@@ -486,9 +486,9 @@ volumes:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Utilisation de Compose Watch
+### Utilisation de Compose Watch
 <Hr />
 
 Fraichement sorti fin 2023, [Docker Compose Watch](https://docs.docker.com/compose/file-watch/) permet de synchroniser automatiquement votre code source local avec le code de votre conteneur Docker sans avoir besoin d'utiliser des volumes!
@@ -513,7 +513,7 @@ services:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <div class="text-xs">
 
@@ -538,7 +538,7 @@ Pour build et lancer un projet Compose et démarrer le mode watch:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Modifiez le fichier `compose.yaml` pour utiliser Compose Watch à la place des volumes:
 
@@ -577,9 +577,9 @@ services:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Docker Compose en production
+## Docker Compose en production
 <Hr />
 
 <div class="text-sm">
@@ -610,9 +610,9 @@ $ docker compose -f compose.yml -f production.yml up
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### En résumé
+## En résumé
 <Hr />
 
 <div class="text-sm">

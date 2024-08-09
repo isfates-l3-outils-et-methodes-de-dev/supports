@@ -1,7 +1,7 @@
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Modèle d'application Compose
+### Modèle d'application Compose
 <Hr />
 
 <div class="grid grid-cols-2 gap-4">
@@ -50,9 +50,9 @@ networks:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Services
+#### Services
 <Hr />
 
 <div class="grid grid-cols-2 gap-4 ">
@@ -101,9 +101,9 @@ Un **service** est un concept abstrait mis en œuvre sur des plateformes en exé
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Networks
+#### Networks
 <Hr />
 
 <div class="grid grid-cols-2 gap-4 ">
@@ -155,9 +155,9 @@ Les services communiquent entre eux par l'intermédiaire de **networks**. Dans l
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Volumes
+#### Volumes
 <Hr />
 
 <div class="grid grid-cols-2 gap-4 ">
@@ -207,9 +207,9 @@ Les services stockent et partagent des données persistantes dans des **volumes*
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Secrets
+#### Secrets
 <Hr />
 
 <div class="grid grid-cols-2 gap-4 ">
@@ -263,9 +263,9 @@ Un **secret** est une forme spécifique de données de configuration pour les do
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-##### Version
+#### Version
 <Hr />
 
 <br />

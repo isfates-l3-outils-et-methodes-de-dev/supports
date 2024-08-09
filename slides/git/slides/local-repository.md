@@ -1,13 +1,13 @@
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-## Local GIT repository
+# Local GIT repository
 <Hr />
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Créer un GIT repository
+## Créer un GIT repository
 <Hr />
 
 Il y a deux facons d’obtenir un GIT repository, dans les deux cas vous aurez un Git repository en local sur votre machine, prêt à être utilisé.
@@ -25,7 +25,7 @@ Dans les deux solutions, cela créera un sous-répertoire appelé `.git `qui con
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Utiliser la console Git pour créer un dossier que vous transformerez en Git repository.
 
@@ -60,13 +60,12 @@ Dans les deux solutions, cela créera un sous-répertoire appelé `.git `qui con
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Enregistrement des modifications
+## Enregistrement des modifications
 <Hr />
 
-Chaque fichier dans le Working Directory peut être
-dans 2 états:
+Chaque fichier dans le Working Directory peut être dans 2 états:
 
 <v-clicks>
 
@@ -76,7 +75,7 @@ dans 2 états:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Pour connaître le statut de vos fichiers, utilisez la commande `git status`:
 
@@ -106,7 +105,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:**
 
@@ -138,7 +137,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 4. Ajoutez le fichier dans la liste des fichiers **tracked** grâce à la commande `git add liste-de-courses.txt`.
 
@@ -171,9 +170,9 @@ Le fichier `liste-de-courses.txt` est-il dans la **Working Area**, la **Staging 
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Syntaxe Fileglobs
+### Syntaxe Fileglobs
 <Hr />
 
 La commande `git add [<options>] [--] <pathspec>` peut prendre comme valeur de `pathspec` un filepath ou alors un **Fileglobs** (Glob pattern syntax):
@@ -192,7 +191,7 @@ La commande `git add [<options>] [--] <pathspec>` peut prendre comme valeur de `
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <v-clicks>
 
@@ -206,9 +205,9 @@ La commande `git add [<options>] [--] <pathspec>` peut prendre comme valeur de `
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Création d'un commit
+### Création d'un commit
 <Hr />
 
 Utilisez la commande `git commit` pour réaliser un commit:
@@ -226,7 +225,7 @@ Utilisez la commande `git commit` pour réaliser un commit:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Créez un commit avec un message **pertinent**.
 
@@ -247,7 +246,7 @@ $ git commit -m "Add the grocery list"
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Ajoutez maintenant un nouvel aliment dans la liste comme `* 2 abricots` et affichez le status.
 
@@ -271,7 +270,7 @@ GIT indique en rouge que le fichier `liste-de-courses.txt` a été modifié mais
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Ajoutez cette nouvelle version du fichier dans la Staging Area puis ajoutez encore un aliment et afficher le status:
 
@@ -296,7 +295,7 @@ Changes not staged for commit:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Faites un commit de la version du fichier contenant 2 aliments.
 <v-clicks>
@@ -307,9 +306,9 @@ Changes not staged for commit:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Annulation des modifications
+## Annulation des modifications
 <Hr />
 
 <v-clicks>
@@ -332,9 +331,9 @@ $ git commit --amend -m 'Add the abricots and the cerises'
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Comparaison des versions
+## Comparaison des versions
 <Hr />
 
 La commande `git diff` compare la version de la Working Area avec la dernière version présente dans la Staging Area.
@@ -360,7 +359,7 @@ index f2f170d..5ea5ee9 100644
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 Pour comparer la **Staging Area** avec le **.git repo**, utilisez la commande: 
 
@@ -372,9 +371,9 @@ TODO: Plus de detail sur la commande git diff
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Renommer un fichier
+### Renommer un fichier
 <Hr />
 
 **À vous de jouer:**
@@ -402,9 +401,9 @@ Changes to be committed:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Supprimer un fichier
+### Supprimer un fichier
 <Hr />
 
 **À vous de jouer:** Supprimez le fichier et affichez le status.
@@ -423,9 +422,9 @@ Changes not staged for commit:
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Historique des commits
+## Historique des commits
 <Hr />
 
 La commande `git log` permet d'afficher l'historique de nos commits.
@@ -457,7 +456,7 @@ Date:   Tue Aug 6 15:14:21 2024 +0200
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <v-clicks>
 
@@ -476,7 +475,7 @@ Date:   Tue Aug 6 15:14:21 2024 +0200
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -488,9 +487,9 @@ Date:   Tue Aug 6 15:14:21 2024 +0200
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Réécrire l'historique
+## Réécrire l'historique
 <Hr />
 
 <br />
@@ -510,9 +509,9 @@ Date:   Tue Aug 6 15:14:21 2024 +0200
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Modification du dernier commit
+### Modification du dernier commit
 <Hr />
 
 * La commande `git commit --amend` permet de modifier le commit le plus récent.
@@ -546,9 +545,9 @@ $ git commit --amend -m 'new message'
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Modifier des commits plus anciens ou plusieurs commits
+### Modifier des commits plus anciens ou plusieurs commits
 <Hr />
 
 <br />

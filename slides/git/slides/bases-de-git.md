@@ -1,4 +1,4 @@
-## Les bases de GIT
+# Les bases de GIT
 <Hr />
 
 <div class="flex justify-center h-3/4 p-4">
@@ -7,9 +7,9 @@
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Installation
+## Installation
 <Hr />
 
 <div class="flex justify-center h-2/4 p-4">
@@ -29,7 +29,7 @@ git version 2.46.0
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -49,9 +49,9 @@ git version 2.46.0
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Configuration
+## Configuration
 <Hr />
 
 <div class="text-sm">
@@ -68,7 +68,7 @@ git version 2.46.0
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 **À vous de jouer:** Paramétrez votre nom d'utilisateur et votre email:
 
@@ -87,7 +87,7 @@ $ git config --global user.email monemail@example.com
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -115,9 +115,9 @@ usage: git add [<options>] [--] <pathspec>...
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-### Fonctionnement
+## Fonctionnement
 <Hr />
 
 L’une des différences majeures entre Git et les autres VCS (RCS, CVS, SVN..) est sa facon de penser à ses données.
@@ -128,9 +128,9 @@ L’une des différences majeures entre Git et les autres VCS (RCS, CVS, SVN..) 
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Différences entre Snapshot et Delta storage
+### Différences entre Snapshot et Delta storage
 <Hr />
 
 <br />
@@ -143,7 +143,7 @@ L’une des différences majeures entre Git et les autres VCS (RCS, CVS, SVN..) 
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <div class="flex justify-center h-3/5 p-4">
   <img src="/images/delta-vs-snapshot.png" alt="Différences entre Snapshot et Delta storage: https://blog.git-init.com/snapshot-vs-delta-storage/"/>
@@ -173,7 +173,7 @@ L’une des différences majeures entre Git et les autres VCS (RCS, CVS, SVN..) 
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 
@@ -190,9 +190,9 @@ Git utilise une forme de Snapshot storage.
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Les commits
+### Les commits
 <Hr />
 
 Dans Git, les "snapshots" sont appelés des **commits**.
@@ -214,7 +214,7 @@ Git a trois **états fondamentaux** à connaître :
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
 <br />
 <v-clicks>
@@ -232,9 +232,9 @@ La plupart des opérations fait par GIT ont besoin seulement des fichiers en loc
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Détection des fichiers
+### Détection des fichiers
 <Hr />
 
 **GIT est consistant et intègre!**
@@ -258,9 +258,9 @@ SHA1("Wikipédia, l'encyclopédie libre et gratuitE") = 11F453355B28E1158D4E516A
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### Workflow typique
+### Workflow typique
 <Hr />
 
 <div class="flex justify-center h-2/5 ">
@@ -279,9 +279,9 @@ SHA1("Wikipédia, l'encyclopédie libre et gratuitE") = 11F453355B28E1158D4E516A
 
 ---
 
-<Breadcrumbs minDepth="2" />
+<Breadcrumbs />
 
-#### CLI version vs GUI version
+### CLI version vs GUI version
 <Hr />
 
 * Git est un outil CLI (Command Line Interface)
