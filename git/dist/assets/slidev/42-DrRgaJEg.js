@@ -1,0 +1,12 @@
+import{_ as p}from"./VClick-DzMnyV8J.js";import{_}from"./CodeBlockWrapper.vue_vue_type_script_setup_true_lang-BmRmDhJz.js";import{_ as d}from"../Hr-9kVZUJQ-.js";import{_ as f}from"../Breadcrumbs-Hmknlpy4.js";import{o as u,c as m,k as a,l as n,m as g,q as h,s as k,A as l,e as s,a6 as e}from"../modules/vue-Sgy5_GZJ.js";import{_ as x}from"../default-Bb7ucfNr.js";import{u as v,f as $}from"./context-B6IsVtLq.js";import"../index-Dijcf7qG.js";import"../modules/shiki-D9hfyRm1.js";import"./VClicks-DeqpQ4yU.js";import"../modules/unplugin-icons-BHp5s6p8.js";import"./Link.vue_vue_type_script_setup_true_lang-g0sOpOCO.js";const b=s("h2",null,"Comparaison des versions",-1),C=s("p",null,[e("La commande "),s("code",null,"git diff"),e(" compare la version de la Working Area avec la dernière version présente dans la Staging Area.")],-1),B=s("p",null,[s("strong",null,"À vous de jouer:"),e(" Affichez les différences en utilisant "),s("code",null,"git diff")],-1),N=s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-txt"},[s("span",{class:"line"},[s("span",null,"git diff   ")]),e(`
+`),s("span",{class:"line"},[s("span",null,"diff --git a/liste-de-courses.txt b/liste-de-courses.txt")]),e(`
+`),s("span",{class:"line"},[s("span",null,"index f2f170d..5ea5ee9 100644")]),e(`
+`),s("span",{class:"line"},[s("span",null,"--- a/liste-de-courses.txt")]),e(`
+`),s("span",{class:"line"},[s("span",null,"+++ b/liste-de-courses.txt")]),e(`
+`),s("span",{class:"line"},[s("span",null,"@@ -1,2 +1,3 @@")]),e(`
+`),s("span",{class:"line"},[s("span",null," * 3 tomates")]),e(`
+`),s("span",{class:"line"},[s("span",null,"-* 2 abricots 🔴")]),e(`
+`),s("span",{class:"line"},[s("span",null,"\\ No newline at end of file")]),e(`
+`),s("span",{class:"line"},[s("span",null,"+* 2 abricots 🟢")]),e(`
+`),s("span",{class:"line"},[s("span",null,"+* 5 cerises  🟢")]),e(`
+`),s("span",{class:"line"},[s("span",null,"\\ No newline at end of file")])])],-1),M={__name:"42",setup(A){const{$slidev:P,$nav:w,$clicksContext:V,$clicks:z,$page:S,$renderContext:T,$frontmatter:t}=v();return(W,j)=>{const o=f,i=d,r=_,c=p;return u(),m(x,h(k(l($)(l(t),41))),{default:a(()=>[n(o),b,n(i),C,B,n(c,null,{default:a(()=>[n(r,g({},{ranges:[]}),{default:a(()=>[N]),_:1},16)]),_:1})]),_:1},16)}}};export{M as default};
