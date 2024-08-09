@@ -20,7 +20,7 @@ Il y a deux facons d’obtenir un GIT repository, dans les deux cas vous aurez u
 <br />
 
 <v-click>
-Dans les deux solutions, cela créera un sous-répertoire appelé `.git `qui contiendra tous les fichiers nécessaires au Git repository.
+Dans les deux solutions, cela créera un sous-répertoire appelé `.git` qui contiendra tous les fichiers nécessaires au Git repository.
 </v-click>
 
 ---
@@ -341,18 +341,18 @@ La commande `git diff` compare la version de la Working Area avec la dernière v
 **À vous de jouer:** Affichez les différences en utilisant `git diff`
 <v-click>
 
-```txt
-git diff   
+```diff
+$ git diff   
 diff --git a/liste-de-courses.txt b/liste-de-courses.txt
 index f2f170d..5ea5ee9 100644
 --- a/liste-de-courses.txt
 +++ b/liste-de-courses.txt
 @@ -1,2 +1,3 @@
  * 3 tomates
--* 2 abricots 🔴
+-* 2 abricots
 \ No newline at end of file
-+* 2 abricots 🟢
-+* 5 cerises  🟢
++* 2 abricots
++* 5 cerises
 \ No newline at end of file
 ```
 </v-click>
@@ -498,7 +498,7 @@ Date:   Tue Aug 6 15:14:21 2024 +0200
 
 * La principale tâche de Git est de s'assurer que vous ne perdiez jamais un changement commité.
 * Git est également conçu pour vous donner le contrôle total de votre workflow de développement et notamment de définir avec exactitude l'apparence de votre historique de projet.
-* ⚠️ Cela crée des conditions pouvant entraîner la **perte de commModification du dernier commit its**.
+* ⚠️ Cela crée des conditions pouvant entraîner la **perte de commits**.
 </v-clicks>
 
 <v-click>

@@ -180,6 +180,15 @@ $ git log --oneline --decorate --graph --all
 
 <Breadcrumbs />
 
+## Renommer une branche locale
+<Hr />
+
+* Utilisez la commande `git branch --move <name> <new-name>` pour renommer une branche.
+
+---
+
+<Breadcrumbs />
+
 ## Exercice
 <Hr />
 
@@ -312,3 +321,125 @@ gitGraph
 </div>
 </div>
 </v-click>
+
+---
+
+<Breadcrumbs />
+
+### Exercice
+<Hr />
+
+Nous allons faire des courses:
+
+1. Créez et placez vous sur une nouvelle branche `grocery-shopping`
+2. Supprimez des articles dans notre `liste-de-courses.txt`
+3. Les courses sont finies: mergez la branche `grocery-shopping` dans `main`
+4. Supprimez la branche `grocery-shopping`
+
+<br />
+
+**Question:** Quel est le schéma du git graph une fois ces actions réalisées?
+
+---
+
+<Breadcrumbs />
+
+### Résolution des conflits lors des merges
+<Hr />
+
+De temps en temps, **le process de merge ne se passe pas bien** ! Cela se produit quand vous modifiez la même partie du même fichier dans les deux branches que vous voulez merger. Dans ce cas, GIT est incapable de merger et indiquera un **conflit**:
+
+```txt
+$ git merge bbq     
+Auto-merging liste-de-courses.txt
+CONFLICT (content): Merge conflict in liste-de-courses.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+---
+
+<Breadcrumbs />
+
+Pour savoir à tout moment quels fichiers n’ont pas été mergé et posent des conflits, utilisez la commande `git status`.
+
+```txt
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   liste-de-courses.txt 🔴
+```
+
+---
+
+<Breadcrumbs />
+
+**À vous de jouer:** Mergez la branche `bbq` dans `main` et ouvrez le fichier `liste-de-courses.txt`.
+
+<v-click>
+
+```txt
+  * 3 tomates
+  <<<<<<< HEAD
+  * 2 abricots
+  =======
+  * 2 abricots
+  * 5 cerises
+  * 3 saucisses
+  >>>>>>> bbq
+
+```
+</v-click>
+
+---
+
+<Breadcrumbs />
+
+<div class="text-sm">
+
+* Pour tous les fichiers qui ont des conflits de merge non résolus, GIT ajoute des **marqueurs de conflit** (`<<<<<<<,` `=======,` et `>>>>>>>`) dans les fichiers afin que vous les éditiez et **résolviez les conflits manuellement**.
+* En général, le contenu avant le marqueur `=======` est la branche réceptrice et la partie après est la branche de fusion.
+</div>
+
+<v-click>
+
+Pour résoudre un conflit, modifiez le fichier impacté pour conserver ce qui est nécessaire tout en supprimant les marqueurs de conflit. **Stagger** ensuite le fichier pour **indiquer à GIT que le conflit est résolu**.
+
+<div class="grid grid-cols-2 gap-4 text-sm">
+<div class="flex flex-col">
+
+  **Visualisation du conflit:**
+
+  ```txt
+  * 3 tomates
+  <<<<<<< HEAD
+  * 2 abricots
+  =======
+  * 2 abricots
+  * 5 cerises
+  * 3 saucisses
+  >>>>>>> bbq
+  ```
+</div>
+<div class="flex flex-col">
+
+  **Résolution du conflit:**
+
+  ```txt
+  * 3 tomates
+  * 2 abricots
+  * 3 saucisses
+  ```
+</div>
+</div>
+</v-click>
+
+---
+
+<Breadcrumbs />
+
+**À vous de jouer:** Résolvez le conflit. Quel est le schéma du git graph une fois ce merge réalisé?

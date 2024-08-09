@@ -41,7 +41,14 @@ src: ./slides/git-branching.md
 src: ./slides/remote-repository.md
 ---
 
+---
+src: ./slides/tags.md
+---
 
-TODO: Commande `git restore --staged *` pour unstage
-TODO: Commande git discard changes
+---
+src: ./slides/tp-gui.md
+---
+<!--
+TODO: Git Flow
 TODO: link to Git-Cheatsheet.pdf
+-->
