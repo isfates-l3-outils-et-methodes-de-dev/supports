@@ -281,12 +281,12 @@ $ git status
 On branch master
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-        modified:   liste-de-courses.txt 🔴
+        modified:   liste-de-courses.txt 🟢
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-        modified:   liste-de-courses.txt 🟢
+        modified:   liste-de-courses.txt 🔴
 ```
 
 * GIT indique en <span class="text-green">vert</span> que le fichier a été **staged** et est prêt pour être commité dans le .git repository  (la liste contient 2 items)
