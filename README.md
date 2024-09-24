@@ -15,7 +15,7 @@ Utilisez une image Docker pour hoster les **PDFs** ainsi que les **slides**:
 ### Build de l'image
 
 ```bash
-docker build -t isfates-l3-outils-et-methodes-de-dev-supports  --progress=plain .       
+docker build -t isfates-l3-outils-et-methodes-de-dev-supports  --progress=plain .
 ```
 
 ### Lancement de l'image en local

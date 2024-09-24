@@ -37,4 +37,12 @@ src: ./slides/utilisation.md
 src: ./slides/conception.md
 ---
 
-TODO: Dans la réalité, REST est plus une recommandation qu'une règle stricte. La technologie doit travailler pour vous, et non vous pour la technologie.
+---
+src: ./slides/ressources.md
+---
+
+---
+
+<div class="flex justify-center h-3/5 mt-15">
+  <img src="/images/thank-you.png" alt="Merci pour votre attention"/>
+</div>

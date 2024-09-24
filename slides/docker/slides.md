@@ -29,3 +29,8 @@ src: ./slides/1-conteneurisation-avec-docker.md
 ---
 src: ./slides/2-orchestration-de-conteneurs-avec-docker.md
 ---
+
+---
+src: ./slides/ressources.md
+---
+

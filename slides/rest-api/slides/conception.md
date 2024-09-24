@@ -298,5 +298,430 @@ paths:
 
 <Breadcrumbs />
 
+Pour éviter la duplication du code, vous pouvez placer les définitions communes dans la section global `components` et les référencer à l'aide de `$ref`:
+
+```yaml
+paths:
+  /users:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+```
+
+---
+
+<Breadcrumbs />
+
 #### Définition de Schémas
 <Hr />
+
+Le type de données d'un schéma est défini par le mot-clé `type`:
+
+<div class="text-sm">
+
+* `string` (cela comprend les dates et les fichiers)
+* `number`
+* `integer`
+* `boolean`
+* `array`
+* `object`
+</div>
+
+<v-click>
+
+Exemple:
+
+<div class="grid grid-cols-2 gap-10">
+
+```yaml
+User:
+  type: object
+```
+
+```yaml
+User:
+  oneOf:
+    - type: string
+    - type: object
+```
+</div>
+
+<p class="text-right text-sm">
+
+https://swagger.io/docs/specification/data-models/data-types
+</p>
+</v-click>
+
+---
+
+<Breadcrumbs />
+
+Les tableaux sont définis de la sorte:
+
+<div class="grid grid-cols-2 gap-10">
+
+```yaml
+Users:
+  type: array
+  items:
+    type: string
+```
+
+```yaml
+Users:
+  type: array
+  items:
+    oneOf:
+      - type: string
+      - type: integer
+```
+</div>
+
+Vous pouvez définir la longueur minimale et maximale d'un tableau à l'aide de `minItems` et `maxItems`.
+
+```yaml
+Users:
+  type: array
+  items:
+    type: string
+  minItems: 1
+  maxItems: 10
+```
+
+---
+
+<Breadcrumbs />
+
+Un objet est une collection de paires **propriété**/**valeur**:
+
+```yaml
+User:
+  type: object
+  properties:
+    id:
+      type: integer
+    name:
+      type: string
+    contact_info:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+  required:
+    - id
+```
+
+Par défaut, toutes les propriétés des objets sont **optionnelles**. Vous pouvez spécifier les propriétés requises dans la liste `required`.
+
+---
+
+<Breadcrumbs />
+
+Utilisez le mot-clé `enum` pour spécifier les valeurs possibles d'un type `string`:
+
+```yaml
+#/ GET /users?sort=[asc|desc]
+
+paths:
+  /users:
+    get:
+      parameters:
+        - in: query
+          name: sort
+          description: Sort order
+          schema:
+            type: string
+            enum:
+              - asc
+              - desc
+```
+
+<v-click>
+<div class="mt-5 bg-green-100 border border-green-400 text-green-700 px-4 rounded relative text-xs" role="alert">
+
+💡 Il est fortement recommendé de placer les `enum`s dans la section globale `components.schemas`.
+</div>
+</v-click>
+
+---
+
+<Breadcrumbs />
+
+OpenAPI 3.0 fournit plusieurs mots-clés que vous pouvez utiliser pour combiner des schémas. 
+
+Vous pouvez utiliser ces mots-clés pour créer un schéma complexe ou pour valider une valeur en fonction de plusieurs critères.
+
+<v-clicks>
+
+* `oneOf` - valide la valeur par rapport à un seul des sous-schémas
+* `allOf` - valide la valeur par rapport à tous les sous-schémas
+* `anyOf` - valide la valeur par rapport à n'importe quel sous-schéma (un ou plusieurs)
+</v-clicks>
+
+---
+
+<Breadcrumbs />
+
+Exemple d'utilisation:
+
+<div class="grid grid-cols-2 gap-10">
+
+```yaml
+paths:
+  /pets:
+    patch:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: '#/components/schemas/Cat'
+                - $ref: '#/components/schemas/Dog'
+```
+
+```yaml
+components:
+  schemas:
+    Pet:
+      type: object
+      # ...
+    Dog:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          # ...
+    Cat:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          # ...
+```
+</div>
+
+
+---
+
+<Breadcrumbs />
+
+#### Authentification
+<Hr />
+
+OpenAPI utilise le terme **chéma de sécurité** pour les schémas d'authentification et d'autorisation. Les types gérés sont:
+
+<v-clicks>
+
+* `http` - pour les authentifications Basic, Bearer et autres schémas d'authentification HTTP
+* `apiKey` - pour les clés d'API et l'authentification par cookie
+* `oauth2` - pour OAuth 2
+* `openIdConnect` - pour OpenID Connect
+</v-clicks>
+
+<br />
+
+<v-click>
+
+Tous les schémas de sécurité utilisés par l'API doivent être définis dans la section global `components/securitySchemes`.
+</v-click>
+
+---
+
+<Breadcrumbs />
+
+Exemple pour une authentification à l'aide d'un Bearer token:
+
+```yaml
+paths:
+  /users:
+    post:
+      security:
+        - bearerAuth: []
+      # ...
+
+components:
+  securitySchemes:
+    bearerAuth: # nom arbitraire
+      type: http
+      scheme: bearer
+      bearerFormat: JWT 
+```
+
+<div class="flex justify-center h-1/4 p-4">
+  <img src="/images/swagger-auth.png" alt="Visuel de l'authentification dans swagger" class="!borer-0" />
+</div>
+
+---
+
+<Breadcrumbs />
+
+## Exercice
+<Hr />
+
+Définissez à l'aide d'un document **OAS** une API RESTfull permettant de:
+
+<div class="text-sm">
+<v-clicks depth="2">
+
+* **1. Récupérez la liste d'une ressource de votre choix**
+  * la liste pourra être paginé par `page` avec un nombre `per-page` pouvant être définis (veuillez à leur donner une **description**)
+  * la liste sera typé et fournira un exemple
+* **2. Ajoutez une ressource à cette liste**
+  * Cette endpoint devra être protégé par une authentification utilisant un Bearer token JWT
+* **3. Modifiez une ressource**
+  * Assurez vous de détailler ce qu'il faut utiliser comme paramètre dans le path
+  * Cette endpoint devra être protégé par une authentification utilisant un Bearer token JWT
+* Assurez vous de ne pas dupliquer les données des schémas
+* L'API ne supportera que le Media type JSON
+* Documentez les différents status code pouvant être renvoyé par vos endpoints (**404**, **500**, ...)
+</v-clicks>
+</div>
+
+<!--
+openapi: 3.0.3
+info:
+  title: My API - OpenAPI 3.0
+  version: "1.0.0"
+servers:
+  - url: https://my-api.com/v1
+    description: Main production server
+
+paths:
+  "/users":
+    get:
+      summary: List users
+      operationId: getUsers
+      parameters:
+      - "$ref": "#/components/parameters/per-page"
+      - "$ref": "#/components/parameters/page"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/User"
+        '500':
+          "$ref": "#/components/responses/internal_server_error"
+    post:
+      summary: Create an user
+      operationId: CreateUser
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserCreation"
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/User"
+        '404':
+          "$ref": "#/components/responses/not_found"
+        '403':
+          "$ref": "#/components/responses/forbidden"
+        '500':
+          "$ref": "#/components/responses/internal_server_error"
+  "/users/{id}":
+    put:
+      summary: Edit an user
+      operationId: EditUser
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserCreation"
+      responses:
+        '204':
+          "$ref": "#/components/responses/no_content"
+        '403':
+          "$ref": "#/components/responses/forbidden"
+        '500':
+          "$ref": "#/components/responses/internal_server_error"
+
+components:
+  schemas:
+    UserCommon:
+      type: object
+      properties:
+        name:
+          type: string
+          example: johannchopin
+        contact_info:
+          type: object
+          properties:
+            email:
+              type: string
+              format: email
+              example: e@mail.com
+    UserCreation:
+      allOf:
+        - $ref: "#/components/schemas/UserCommon"
+    User:
+      allOf:
+        - $ref: "#/components/schemas/UserCommon"
+        - type: object
+          properties:
+            id:
+              type: integer
+          required:
+            - id
+  parameters:
+    per-page:
+      name: per_page
+      description: The number of results per page (max 100).
+      in: query
+      schema:
+        type: integer
+        default: 30
+        maximum: 100
+    page:
+      name: page
+      description: The page number of the results to fetch.
+      in: query
+      schema:
+        type: integer
+        default: 1
+  responses:
+    not_found:
+      description: Resource not found
+    forbidden:
+      description: Forbidden due to lack of permission
+    internal_server_error:
+        description: Internal Server Error
+    no_content:
+        description: No Content
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+-->

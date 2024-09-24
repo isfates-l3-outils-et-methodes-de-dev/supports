@@ -38,7 +38,6 @@ RUN (trap 'kill 0' SIGINT; \
   wait)
 
 
-
 FROM nginx:1.27.0-alpine
 
 RUN rm -r /usr/share/nginx/html/*
@@ -47,3 +46,4 @@ COPY nginx.config /etc/nginx/conf.d/default.conf
 COPY --from=build-git /build/build/ /usr/share/nginx/html
 COPY --from=build-presentation /build/build/ /usr/share/nginx/html
 COPY --from=build-docker /build/build/ /usr/share/nginx/html
+COPY --from=build-rest-api /build/build/ /usr/share/nginx/html

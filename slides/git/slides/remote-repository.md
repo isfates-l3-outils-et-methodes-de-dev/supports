@@ -96,7 +96,7 @@ Pour push votre .git Repository local sur votre remote sur GitHub:
 
 1. Votre *git_repo* doit exister préalablement sur GitHub ! S’il n’existe pas encore, créez-le en lui donnant le nom *git_repo* depuis https://github.com/new!
 2. Positionnez-vous dans votre .git Repository local
-3. Tapez la commande: `git remote add origin https://github.com/<user_name>/<project_name>`
+3. Tapez la commande: `git remote add origin git@github.com:<user>/<project>.git`
 4. Tapez enfin: `git push -u origin main`
 </v-clicks>
 
