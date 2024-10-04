@@ -6,9 +6,9 @@ transition: slide-up
 course: Outils et méthodes de développement
 presenter-name: Johann Chopin
 date: Premier semestre de la 3ème années de la licence Informatique et ingénierie du web.
-exportFilename: docker
 title: Introduction à Docker
 hideInToc: true
+exportFilename: docker
 ---
 
 # <mdi-docker /> Introduction à Docker

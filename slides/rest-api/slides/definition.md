@@ -440,7 +440,7 @@ Ces chemins peuvent être imbriqués afin de créer une relation entre les resso
 
 <div class="text-sm">
 
-* Récupérez la liste des `staff-member` de la `bakery` identifié par `{bakery-id}`:
+* Récupérez la liste des `staff-member` de la `bakery` identifiée par `{bakery-id}`:
 
 <v-click>
 <div class="-my-3">

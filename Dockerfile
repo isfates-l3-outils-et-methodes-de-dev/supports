@@ -37,6 +37,14 @@ RUN (trap 'kill 0' SIGINT; \
   (npx slidev export ./slides.md --per-slide --output $SLIDE_NAME --timeout 60000 && mkdir -p ./build/pdfs && mv $SLIDE_NAME.pdf ./build/pdfs) & \
   wait)
 
+FROM build-base AS build-ci-cd
+ENV SLIDE_NAME="ci-cd"
+COPY ./slides/$SLIDE_NAME .
+RUN (trap 'kill 0' SIGINT; \
+  (npx slidev build ./slides.md --base /slides/$SLIDE_NAME/ && mkdir -p ./build/slides/$SLIDE_NAME && mv dist/* ./build/slides/$SLIDE_NAME) & \
+  (npx slidev export ./slides.md --per-slide --output $SLIDE_NAME --timeout 60000 && mkdir -p ./build/pdfs && mv $SLIDE_NAME.pdf ./build/pdfs) & \
+  wait)
+
 
 FROM nginx:1.27.0-alpine
 
@@ -47,3 +55,4 @@ COPY --from=build-git /build/build/ /usr/share/nginx/html
 COPY --from=build-presentation /build/build/ /usr/share/nginx/html
 COPY --from=build-docker /build/build/ /usr/share/nginx/html
 COPY --from=build-rest-api /build/build/ /usr/share/nginx/html
+COPY --from=build-ci-cd /build/build/ /usr/share/nginx/html

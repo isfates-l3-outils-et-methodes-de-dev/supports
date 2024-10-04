@@ -45,8 +45,8 @@ Mais comment partagez une telle documentation?
   </div>
 
   <div class="flex flex-col items-center">
-  <img src="/images/postman.png" alt="Photo de Gitkraken"  class="h-2/5 !border-0"/>
-  <img src="/images/readme-brand-icon.png" alt="Photo de Gitkraken"  class="w-2/5 !border-0"/>
+  <img src="/images/postman.png" alt="Icone de postman"  class="h-2/5 !border-0"/>
+  <img src="/images/readme-brand-icon.png" alt="Icone de Readme"  class="w-2/5 !border-0"/>
   </div>
 
   <img src="/images/openapi-icon.png" class="!border-0" alt="Photo de fork"/>
@@ -570,22 +570,22 @@ components:
 ## Exercice
 <Hr />
 
-Définissez à l'aide d'un document **OAS** une API RESTfull permettant de:
+Définissez à l'aide d'un document **OAS** une API RESTful permettant de:
 
 <div class="text-sm">
 <v-clicks depth="2">
 
-* **1. Récupérez la liste d'une ressource de votre choix**
-  * la liste pourra être paginé par `page` avec un nombre `per-page` pouvant être définis (veuillez à leur donner une **description**)
-  * la liste sera typé et fournira un exemple
-* **2. Ajoutez une ressource à cette liste**
-  * Cette endpoint devra être protégé par une authentification utilisant un Bearer token JWT
-* **3. Modifiez une ressource**
-  * Assurez vous de détailler ce qu'il faut utiliser comme paramètre dans le path
-  * Cette endpoint devra être protégé par une authentification utilisant un Bearer token JWT
-* Assurez vous de ne pas dupliquer les données des schémas
-* L'API ne supportera que le Media type JSON
-* Documentez les différents status code pouvant être renvoyé par vos endpoints (**404**, **500**, ...)
+* **1. Récupérer la liste d'une ressource de votre choix**.
+  * La liste peut être paginée par `page` avec un nombre `per-pages` qui peut être défini (veuillez leur donner une **description**).
+  * La liste sera typée et fournira un exemple.
+* **2. Ajouter une ressource à cette liste**
+  * Ce point d'accès doit être protégé par une authentification utilisant un Bearer token JWT
+* **3. Modifier une ressource** 
+  * Assurez-vous que vous détaillez ce que vous devez utiliser comme paramètre dans le path
+  * Ce point d'accès doit être protégé par une authentification utilisant un Bearer token JWT
+* Assurez-vous de ne pas dupliquer les données des schémas.
+* L'API ne prendra en charge que le type de média JSON.
+* Documentez les différents codes de statut qui peuvent être retournés par vos endpoints (**404**, **500**, ...).
 </v-clicks>
 </div>
 

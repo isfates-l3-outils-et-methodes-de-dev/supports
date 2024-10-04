@@ -167,6 +167,11 @@ Nous allons créer un environnement de développement en local permettant de lan
 #
 ```
 
+<v-click>
+
+2. Déplacez `MYSQL_DATABASE`, `MYSQL_USER` et `MYSQL_PASSWORD` dans un ficher `.env`
+</v-click>
+
 <!--
 services:
   db:
@@ -184,11 +189,6 @@ services:
 volumes:
   db-volume:
 -->
-
-<v-click>
-
-2. Déplacez `MYSQL_DATABASE`, `MYSQL_USER` et `MYSQL_PASSWORD` dans un ficher `.env`
-</v-click>
 
 ---
 
@@ -275,7 +275,7 @@ volumes:
 <v-clicks>
 
 * se base sur l'image `wordpress`
-* stocke ses données de manière persistante dans un `volume` sous le dossier `/var/lib/mysql`
+* stocke ses données de manière persistante dans un `volume` sous le dossier `/var/www/html/wp-content`
 * se connecte à l'host du service `db` sur la database spécifié avec le bon utilisateur et mot de passe
 * est accessible en local sur le port `80`
 * doit toujours redémarrer (`restart`) s'il s'arrête de manière involontaire
