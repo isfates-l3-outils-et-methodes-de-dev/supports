@@ -340,9 +340,9 @@ jobs:
 
 <Breadcrumbs />
 
-Modifiez maintenant ce workflow afin de lancer à chaque `push` les steps `Lint`, `Test` et `Build`.
+Modifiez maintenant ce workflow afin de lancer à chaque `push` les jobs `Lint`, `Test` et `Build`.
 
-Chaque step devra:
+Chaque job devra:
 
 <v-clicks>
 
@@ -395,6 +395,7 @@ Utilisez cette steps pour installer les dependencies:
 ```
 
 <!--
+```
 name: Linting, Testing, Building
 
 on: push
@@ -452,6 +453,7 @@ jobs:
         
       - name: Build
         run: npm run build
+```
 -->
 
 ---

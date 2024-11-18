@@ -942,7 +942,7 @@ WORKDIR /app
 COPY package.json yarn.lock .  # Copie des packages
 RUN npm install                # Installer les dépendances
 COPY . .                       # Copie des fichiers
-RUN npm build                  # Run build
+RUN npm build                  # Lancer le build
 ```
 </div>
 </v-click>

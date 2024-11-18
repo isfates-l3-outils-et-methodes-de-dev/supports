@@ -575,7 +575,7 @@ Définissez à l'aide d'un document **OAS** une API RESTful permettant de:
 <div class="text-sm">
 <v-clicks depth="2">
 
-* **1. Récupérer la liste d'une ressource de votre choix**.
+* **1. Récupérer la collection de votre choix**.
   * La liste peut être paginée par `page` avec un nombre `per-pages` qui peut être défini (veuillez leur donner une **description**).
   * La liste sera typée et fournira un exemple.
 * **2. Ajouter une ressource à cette liste**
@@ -590,6 +590,7 @@ Définissez à l'aide d'un document **OAS** une API RESTful permettant de:
 </div>
 
 <!--
+```
 openapi: 3.0.3
 info:
   title: My API - OpenAPI 3.0
@@ -724,4 +725,5 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
+```
 -->

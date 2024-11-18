@@ -597,7 +597,7 @@ La première ligne d'un message de réponse HTTP est la ligne d'état, qui compr
 | **1xx** | Information       | Demande reçue, poursuite de la procédure                                     |
 | **2xx** | Succès            | L'action a été reçue, comprise et acceptée avec succès.                      |
 | **3xx** | Redirection       | Une action supplémentaire doit être entreprise afin de compléter la demande. |
-| **4xx** | Erreur du client  | La demande contient une mauvaise syntaxe ou ne peut être satisfaite          |
+| **4xx** | Erreur du client  | La demande contient une mauvaise syntaxe ou ne peut être satisfaite.         |
 | **5xx** | Erreur du serveur | Le serveur n'a pas réussi à répondre à une demande apparemment valide.       |
 </v-clicks>
 </div>
