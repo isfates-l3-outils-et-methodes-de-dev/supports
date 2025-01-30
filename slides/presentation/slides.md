@@ -57,7 +57,7 @@ exportFilename: presentation
   <mdi-nodejs />
   <mdi-language-typescript />
   <mdi-react />
-  <img src="/images/svelte.svg" class="!border-0 w-10 h-10" alt="Logo de Buyco"/>
+  <img src="/images/svelte.svg" class="!border-0 w-10 h-10" alt="Logo de svelte"/>
   <mdi-sass />
   <mdi-docker />
 </p>
