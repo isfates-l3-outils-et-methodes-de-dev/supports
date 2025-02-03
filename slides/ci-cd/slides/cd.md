@@ -56,7 +56,6 @@ La livraison continue se met généralement en place à l'aide d'une **Platform 
 
 <Breadcrumbs />
 
-
 <v-click>
 
 Exemples de **PaaS**:
