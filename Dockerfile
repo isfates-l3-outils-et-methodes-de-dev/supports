@@ -3,7 +3,7 @@ RUN mkdir -p /build
 WORKDIR /build
 COPY package*.json ./
 RUN npm i
-RUN npx playwright install-deps
+# RUN npx playwright install-deps
 
 FROM build-base AS build-git
 ENV SLIDE_NAME="git"
