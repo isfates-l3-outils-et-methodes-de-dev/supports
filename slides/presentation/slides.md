@@ -89,11 +89,10 @@ exportFilename: presentation
 
 <v-clicks>
 
-* Système de contrôle de versions
-* Intégration continue
-* Méthodes agiles et Outils de suivi
 * Virtualisation et Docker
+* Système de contrôle de versions
 * Architecture REST
+* Intégration continue
 </v-clicks>
 
 ---
@@ -107,8 +106,8 @@ exportFilename: presentation
 
 Répartitions:
 
-* 2 mardis après-midi: 17 septembre et 1er octobre
-* 4 samedis matin: 21 septembre au 12 octobre
+* 2 vendredis après-midi: 19 septembre et 3 octobre
+* 4 samedis matin: 13 septembre au 4 octobre
 
 <v-click>
 
@@ -116,7 +115,7 @@ Répartitions:
 
 * Un contrôle écrit d'environs 30-45mins
 * Un projet personnel
-* Le contrôle et le projet se feront lors de la dernière séance
+* Le contrôle et le projet se feront **lors de la dernière séance**
 </v-click>
 
 ---

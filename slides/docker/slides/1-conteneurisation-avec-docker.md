@@ -266,7 +266,7 @@ Assurez-vous que Docker CLI est bien disponible depuis votre terminal:
 
 ```bash
 $ docker -v
-Docker version 20.10.21, build baeda1f
+Docker version 28.3.3, build 980b856
 ```
 
 ---
