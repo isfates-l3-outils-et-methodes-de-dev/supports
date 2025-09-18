@@ -73,7 +73,7 @@ travailler dessus en même temps
 
 * Utilisation collaborative entre plusieurs développeurs
 * Les clients ne font pas un simple check-out du dernier snapshot (version) des fichiers, mais un mirroring (une copie) de **tout le repository**, avec tout son historique.
-* Ainsi si le server meurt alors que ces systèmes collaboraient avec lui, n’importe lequel des client repositories peut être copié sur le nouveau server et ainsi le rétablir dans sa totalité.
+* Ainsi si le serveur meurt alors que ces systèmes collaboraient avec lui, n’importe lequel des client repositories peut être copié sur le nouveau serveur et ainsi le rétablir dans sa totalité.
 * Chaque clone est vraiment un **full backup de toutes les données**.
 </v-clicks>
 </div>
