@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "engines": {
-    "node": "22"
+    "node": "24"
   },
   "scripts": {
     "build": "slidev build",
@@ -10,7 +10,7 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^52.1.0",
+    "@slidev/cli": "^51.6.2",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-theme-dfhi-isfates": "^0.2.2",
