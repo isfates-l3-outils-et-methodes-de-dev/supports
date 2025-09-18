@@ -34,3 +34,8 @@ src: ./slides/2-orchestration-de-conteneurs-avec-docker.md
 src: ./slides/ressources.md
 ---
 
+---
+
+<div class="flex justify-center h-3/5 mt-15">
+  <img src="/images/thank-you.png" alt="Merci pour votre attention"/>
+</div>

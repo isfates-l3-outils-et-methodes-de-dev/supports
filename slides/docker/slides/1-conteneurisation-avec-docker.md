@@ -409,7 +409,7 @@ CMD <commande qui est exécutée lors de `docker container run`>
 
 <Hr />
 
-Listez toutes vos images avec `docker container ls`:
+Listez tous vos conteneurs avec `docker container ls`:
 
 ```bash
 $ docker container ls
@@ -819,7 +819,7 @@ Pour publier un port, lancez le conteneur avec `-p <host-port>:<container-port>`
 
 <Breadcrumbs />
 
-**À vous de jouer:** Lancez le conteneur `docker/welcome-to-docker` qui expose sont port `80` sur votre port local `8080`.
+**À vous de jouer:** Lancez un conteneur à partir de l'image `docker/welcome-to-docker` qui expose sont port `80` sur votre port local `8080`.
 
 <v-click>
 <br />

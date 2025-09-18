@@ -173,6 +173,7 @@ Nous allons créer un environnement de développement en local permettant de lan
 </v-click>
 
 <!--
+```
 services:
   db:
     image: mariadb
@@ -180,14 +181,22 @@ services:
       - db-volume:/var/lib/mysql
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 1
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE} # from the `.env` file
+      MYSQL_USER: ${MYSQL_USER}         # from the `.env` file
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD} # from the `.env` file
     hostname: db-host
     restart: always
 
 volumes:
   db-volume:
+```
+
+Avec un fichier `database.env`:
+```
+services:
+  db:
+    env_file: "database.env"
+```
 -->
 
 ---
@@ -238,6 +247,7 @@ volumes:
 ```
 
 <!--
+```
 services:
   db:
     image: mariadb
@@ -261,6 +271,7 @@ services:
 
 volumes:
   db-volume:
+```
 -->
 
 ---
@@ -312,6 +323,7 @@ volumes:
 ```
 
 <!--
+```
 services:
   db:
     image: mariadb
@@ -349,6 +361,7 @@ services:
 volumes:
   db-volume:
   wp-volume:
+```
 -->
 
 ---
@@ -469,6 +482,7 @@ RUN npm install
 <!--
 N'y a t'il pas un problème avec le fichier index.js dans la fonction plus?
 
+```
 services:
   node-dev-env:
     build: .
@@ -481,6 +495,7 @@ services:
 
 volumes:
   node_modules:
+```
 -->
 
 
@@ -558,6 +573,7 @@ Pour build et lancer un projet Compose et démarrer le mode watch:
 ```
 
 <!--
+```
 services:
   node-dev-env:
     build: .
@@ -573,6 +589,7 @@ services:
             - node_modules/
         - action: rebuild
           path: package.json
+```
 -->
 
 ---
