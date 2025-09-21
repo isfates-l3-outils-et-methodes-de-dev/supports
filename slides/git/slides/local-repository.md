@@ -125,7 +125,7 @@ No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        liste-de-courses.txt
+        liste-de-courses.txt 🔴
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -151,7 +151,7 @@ No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
-        new file:   liste-de-courses.txt
+        new file:   liste-de-courses.txt 🟢
 ```
 
 <v-click>

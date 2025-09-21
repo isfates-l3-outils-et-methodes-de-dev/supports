@@ -152,6 +152,7 @@ gitGraph
   checkout main
   merge feature/name-A
   checkout release
+  commit id: "  "
   merge main tag: "v1.0.0"
   branch feature/name-B
   checkout feature/name-B
@@ -162,6 +163,7 @@ gitGraph
   commit
   merge feature/name-B
   checkout release
+  commit id: "   "
   merge main tag: "v1.1.0"
 ```
 
