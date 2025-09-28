@@ -266,6 +266,23 @@ Gist est un service de GitHub permettant de simplement partager des snippets de 
 4. Exécutez la requête. Vous devriez recevoir une erreur **401**.
 </v-clicks>
 
+<!--
+* `GET /users/{username}/gists`
+
+* `POST /gists`
+
+```
+{
+    "public": true,
+    "files": {
+        "just-a-gist.md": {
+            "content": "# Hello from the API"
+        }
+    }
+}
+```
+-->
+
 ---
 
 <Breadcrumbs />

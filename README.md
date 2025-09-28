@@ -2,6 +2,16 @@
 
 [Les PDFs du cours](https://github.com/isfates-l3-outils-et-methodes-de-dev/supports/tree/pdfs)
 
+<!--
+Durée moyenne des cours:
+
+* Docker: 8h
+* Git: 4h
+* rest-api: 5h
+* ci-cd: 3h
+* contrôle: 4h
+-->
+
 ## Développement
 
 Chaque présentations sont situées dans le dossier [slides](./slides/) et sont un projet [slidev](https://sli.dev/).
