@@ -520,7 +520,7 @@ components:
 #### Authentification
 <Hr />
 
-OpenAPI utilise le terme **chéma de sécurité** pour les schémas d'authentification et d'autorisation. Les types gérés sont:
+OpenAPI utilise le terme **schéma de sécurité** pour les schémas d'authentification et d'autorisation. Les types gérés sont:
 
 <v-clicks>
 
