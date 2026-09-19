@@ -742,3 +742,31 @@ Exemple de syntaxe de query strings permettant un filtrage avancé: https://docs
 * `GET /bakeries?filters[$and][0][employees_amount][$gte]=5&filters[$and][1][employees_amount][$lte]=10`
 * `GET /authors?filters[$or][0][firstName][$startsWithi]=a&filters[$or][1][firstName][$startsWithi]=b`
 -->
+
+
+---
+
+<Breadcrumbs />
+
+**Nouveauté 2026:**
+
+Une nouvelle méthode HTTP a été normalisée: `QUERY`.
+
+Elle se comporte comme un `GET` auquel on peut ajouter un body qui permet de structurer des filtres complexes:
+
+<v-click>
+
+```json
+QUERY /bakeries
+Accept: application/json
+Content-Type: application/json
+ 
+{
+  "employees": {
+    "amount": 50
+  },
+  "open": true
+}
+```
+
+</v-click>

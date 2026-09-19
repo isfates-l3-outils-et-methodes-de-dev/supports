@@ -22,7 +22,7 @@ exportFilename: presentation
     <img src="/images/my-logo.png" class="w-15 !rounded-full" alt="Logo de johannchopin"/>
     <div>
       <p class="!m-0 font-bold	">Johann Chopin</p>
-      <p class="!m-0 text-sm">Frontend Developer</p>
+      <p class="!m-0 text-sm">Teach lead frontend</p>
     </div>
   </div>
 
@@ -44,7 +44,7 @@ exportFilename: presentation
 <hr/>
 
 <img src="/images/buyco.png" class="w-1/5 !border-0 mt-5" alt="Logo de Buyco"/>
-<p class="!m-0 text-sm">Actuellement depuis 2 ans chez Buyco</p>
+<p class="!m-0 text-sm">Actuellement depuis 4 ans chez Buyco</p>
 
 <div class="flex gap-10">
   <img src="/images/dryad.png" class="w-1/5 !border-0 mt-5" alt="Logo de Buyco"/>
@@ -106,8 +106,8 @@ exportFilename: presentation
 
 Répartitions:
 
-* 2 vendredis après-midi: 19 septembre et 3 octobre
-* 4 samedis matin: 13 septembre au 4 octobre
+* 2 mercredi après-midi: 30 septembre et 14 octobre
+* 4 samedis matin: 13-26 septembre et 10-17 octobre
 
 <v-click>
 

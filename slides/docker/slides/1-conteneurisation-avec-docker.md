@@ -204,7 +204,7 @@ Avantages des conteneurs:
   * Vous devez déployer 5 applications Python différentes qui nécessitent différentes versions de Python sur un serveur commun.
   * <mdi-arrow-right-thin /> Les conteneurs empaquettent le logiciel avec toutes ses dépendances, vous empaquerez chacune des 5 applications avec leurs versions Python.
 * **Développement**
-  * Vous arrivez sur un projet qui qui nécessite l'utilisation d'autres services comme Postgres, MongoDB, Redis, ...
+  * Vous arrivez sur un projet qui nécessite l'utilisation d'autres services comme Postgres, MongoDB, Redis, ...
   * <mdi-arrow-right-thin /> En une seule commande, vous obtenez une application isolée qui tourne sur votre machine.
 * **Scaling**
   * Imaginez que vous lancer votre propre Netflix ou Facebook
