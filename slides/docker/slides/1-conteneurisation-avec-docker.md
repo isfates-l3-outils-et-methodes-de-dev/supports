@@ -446,7 +446,7 @@ $ docker run -d --name nginx-1 nginx
 $ docker container stop nginx-1
 
 #/ Supprimer un conteneur
-$ docker container rm -f nginx-1
+$ docker container rm -f nginx-2
 
 #/ Lister les conteneurs
 $ docker container ls -a -f ancestor=nginx
